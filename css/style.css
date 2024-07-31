@@ -7,44 +7,84 @@ body{
     text-align: right;
 }
 
-header ul{
-    list-style-type: none;
-    padding: 0;
-    display:flex;
-    margin: 0;
-    margin-left: 50px;
-}
-
-header a {
-    margin-right: 50px;
-}
-
-header li{
-    margin-right: 30px;
-    
-}
-
 header {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
     background-color: #ffffff;
-    margin:20px 40px ;
+    margin: 20px 40px;
     padding: 0 30px;
     border-radius: 60px;
 }
 
-header ul li img{
-    margin-top: 15px;
 
-}
-
-header ul li a{
+header ul {
+    list-style-type: none;
     padding: 0;
+    display: flex;
     margin: 0;
 }
 
-/* إعدادات أساسية */
+header ul li {
+    margin-right: 20px; 
+}
+
+header a {
+    margin-right: 20px; 
+}
+
+header ul li img {
+    margin-top: 10px;
+   
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 20px;
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+    header ul {
+        margin-top: 10px;
+    }
+
+    header a {
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+
+    header ul li {
+        margin-right: 10px; 
+    }
+
+   
+}
+
+@media (max-width: 480px) {
+    header {
+        margin: 5px;
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    header ul {
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    header a {
+        margin-bottom: 5px; 
+    }
+
+    header ul li {
+        margin-right: 5px; 
+    }
+}
+
 .disc-section {
     display: flex;
     flex-direction: row-reverse;
@@ -54,33 +94,30 @@ header ul li a{
     text-align: right;
 }
 
-/* تحسينات للمحتوى النصي والصور */
 .disc-img img {
     width: 100%;
     margin-bottom: 10px;
 }
 
 .disc h2 {
-    font-size: 2.5rem; /* 40px تقريبا */
-    margin-bottom: 2rem; /* 32px تقريبا */
+    font-size: 2.5rem; 
+    margin-bottom: 2rem; 
 }
 
 .disc {
-    padding-left: 2rem; /* 32px تقريبا */
+    padding-left: 2rem;
 }
 
-/* تحسين زر الاتصال */
 .contact-btn {
-    padding: 10px 20px; /* تقليل حجم الزر */
+    padding: 10px 20px; 
     background-color: #16403e;
     color: white;
     border: none;
     border-radius: 50px;
-    font-size: 1.5rem; /* 24px تقريبا */
+    font-size: 1.5rem; 
     text-decoration: none;
 }
 
-/* استجابة لمقاسات الشاشات المختلفة */
 @media (max-width: 768px) {
     .disc-section {
         flex-direction: column;
@@ -93,24 +130,23 @@ header ul li a{
     }
 
     .disc h2 {
-        font-size: 2rem; /* 32px تقريبا */
-        margin-bottom: 1.5rem; /* 24px تقريبا */
-    }
+        font-size: 2rem; 
+        margin-bottom: 1.5rem; 
 
     .contact-btn {
-        font-size: 1.25rem; /* 20px تقريبا */
+        font-size: 1.25rem; 
     }
 }
-
+}
 @media (max-width: 480px) {
     .disc h2 {
-        font-size: 1.5rem; /* 24px تقريبا */
-        margin-bottom: 1rem; /* 16px تقريبا */
+        font-size: 1.5rem; 
+        margin-bottom: 1rem; 
     }
 
     .contact-btn {
-        font-size: 1rem; /* 16px تقريبا */
-        padding: 8px 16px; /* تقليل حجم الزر */
+        font-size: 1rem; 
+        padding: 8px 16px;
     }
 }
 
@@ -158,7 +194,7 @@ header ul li a{
     /* -webkit-line-clamp: 3; */
     text-overflow: ellipsis;
     white-space: normal;
-    flex: 1; /* تأكد من أن الفقرة تأخذ المساحة المتاحة */
+    flex: 1; 
 }
 
 
@@ -332,9 +368,9 @@ footer {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
-    direction: rtl; /* إضافة هذا السطر لعكس اتجاه النصوص */
+    direction: rtl; 
     background-color: #f9f9f9;
-    /* color: #333; */
+    
 }
 
 .first-sec,
@@ -398,8 +434,7 @@ footer {
 }
 
 .third-sec li img {
-    margin-left: 10px; /* تغيير المسافة من اليسار للصور */
+    margin-left: 10px; 
     width: 20px;
     height: 20px;
 }
-
